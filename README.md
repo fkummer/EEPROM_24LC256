@@ -15,18 +15,23 @@ More documentation is on the way!
 And just to get you the absolute basics, here's the signatures for all the functions in the library:
 
   //Constructor
+  
   EEPROM_24LC256(int devAddr);
   
   //Write a single byte at address eeaddress in the chips memory
+  
   void writeEEPROM(unsigned int eeaddress, byte data );
   
   //Write length bytes from the array data starting at address eeaddress and incrementing up.
+  
   void writeEEPROM(unsigned int eeaddress, byte data[], int length);
   
   //Read a single byte at address eeaddress in the chips memory
+  
   byte readEEPROM(unsigned int eeaddress );
   
   //Read length bytes from the address eeaddress and incrementing up into the array pointed to by buffer.
+  
   void readEEPROM(unsigned int eeaddress, byte *buffer, int length);
   
 By Fred Kummer
